@@ -31,5 +31,5 @@ git clone https://github.com/ciocadaniel/30DaysOfJava  ==> pt un nou user se adu
     ( initial pt acest user trebuie deschis terminalul in folderul unde se face aduce clonarea )
 
 git fetch  ==> verifica daca e diferenta intre continutul local si cel remote
-git pull   ==> se face update din remote catre local
+git pull   ==> se face update din remote catre localee
 
