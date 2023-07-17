@@ -19,3 +19,12 @@ Daca se lucreaza pe un branck secundar, trebuie sa se faca update cu branch-ul p
 gid merge nume_branch_secundar   ==> se trece pe branch master apoi se executa comanda si se actualizeaza branch master
 
 git checkout -b nume_branch  ==> creare branch si trecere pe el
+
+git remote add origin https://github.com/ciocadaniel/30DaysOfJava.git   ==> adaugare remote repository ( github )
+
+git remote -v   ==> verificare continut github repository
+
+git push -u origin master  ==> creare branch master pe github si sicronizare
+git push    ==> sincornizare branch master local cu master ithub ( cand se face push trebuie sa fim pe branch master )
+
+
