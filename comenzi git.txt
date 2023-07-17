@@ -1,0 +1,7 @@
+git init   ==> faurire gti repo in local
+git status ==> verificare fisiere in staging
+git add numefiser.extensie  ==> adaugare fisier cu numele ala
+git add *.txt   ==> adaugare in stage a tutror fisierelor presente cu extensia txt
+git add .   ==> adaugare in stage a tutror fisierelor presente
+
+git rm --cached filename -r   ==> remove file from staging
