@@ -5,3 +5,17 @@ git add *.txt   ==> adaugare in stage a tutror fisierelor presente cu extensia t
 git add .   ==> adaugare in stage a tutror fisierelor presente
 
 git rm --cached filename -r   ==> remove file from staging
+git ls-files   ==> verificare cater files avem in stageing
+
+Daca se sterg fiserele manual, staging se actualizeaza cu git add .
+
+git restore --staged numefisier   ==> Pentru restaurare fisier sters din stage
+git branch  ==> verificare branch
+git branch name  ==> creare branch .  Noul branch va avea acelasi nevel ca branchul din care a fost creat
+git checkout name  ==> schimbare branch
+
+Daca se lucreaza pe un branck secundar, trebuie sa se faca update cu branch-ul principal (master) pt ca acela va face upload pe hithub
+
+gid merge nume_branch_secundar   ==> se trece pe branch master apoi se executa comanda si se actualizeaza branch master
+
+git checkout -b nume_branch  ==> creare branch si trecere pe el
