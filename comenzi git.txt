@@ -27,4 +27,8 @@ git remote -v   ==> verificare continut github repository
 git push -u origin master  ==> creare branch master pe github si sicronizare
 git push    ==> sincornizare branch master local cu master ithub ( cand se face push trebuie sa fim pe branch master )
 
+git clone https://github.com/ciocadaniel/30DaysOfJava  ==> pt un nou user se aduce local tot ce este pe server 
+    ( initial pt acest user trebuie deschis terminalul in folderul unde se face aduce clonarea )
+
+git fetch  ==> verifica daca e diferenta intre continutul local si cel remote
 
