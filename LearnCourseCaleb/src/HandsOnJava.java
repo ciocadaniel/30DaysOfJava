@@ -14,41 +14,21 @@ public class HandsOnJava {
 	public static void main(String[] args) throws FileNotFoundException {
   
 	
-		LinkedList<String> names = new LinkedList<>();
-	   names.push("Darius");
-	   names.push("Adela");
-	   names.push("Alex");
-	   names.push("Carmen");
+	int [][] array = {
+			
+			{1,56,32,5,8,},
+			{5,3,9,54},
+			{6,54,87,92,6,58,51},
+			
+	};
 	
-	  
-	   Iterator<String> it = names.iterator();
-	/* 
-	  System.out.println(it.next());
-	  System.out.println(it.next());
-	  System.out.println(it.next());
-	  System.out.println(it.next());
-	 */ 
-	   
-	   
-	//  while(it.hasNext())
-		//  System.out.println(it.next());
-	  
-	   
-	   names.add(2,"Adrian");
-
- 
-
-		ListIterator<String> is = names.listIterator();
-		
-		is.next();
-		is.next();
-		is.next();
-		
-		is.add("Karate");
-		
-	     for(String s : names)
-	    	 System.out.println(s); 
-	
+	for(int i =0;i<array.length;i++)
+	{
+		for(int j=0;j<array[i].length;j++)
+		{
+			System.out.print(array[i][j]+" ");
+		} System.out.println();
+	}
 	   
 	
 		
