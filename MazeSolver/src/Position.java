@@ -3,9 +3,9 @@ public class Position {
     public int x;  //coulmn
     public int y; //row
     
-    public Position(int row,int col)
+    public Position(int y,int x)
     {
-    	y=col;
-    	x=row;
+    	this.y=y;
+    	this.x=x;
     }
 }
