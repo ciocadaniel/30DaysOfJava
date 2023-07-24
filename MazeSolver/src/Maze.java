@@ -4,25 +4,31 @@ public class Maze {
 	// x = column y=row Position(row,col)
 	// maze[rand][column] maze[y][x]
 	static int[][] maze = { 
-			{ 1, 1, 2, 1, 0 }, 
-			{ 1, 0, 0, 1, 0 },
-			{ 1, 1, 1, 1, 0 }, 
-			{ 1, 1, 0, 1, 0 } 
+			{ 0, 0, 0, 1, 0 ,1,0,0,0}, 
+			{ 0, 1, 1, 1, 0 ,1,1,1,0},
+			{ 1, 1, 0, 1, 0 ,1,0,1,0}, 
+			{ 1, 0, 1, 1, 1 ,0,1,1,0},
+			{ 2, 0, 0, 0, 1 ,1,0,1,1}, 
+			{ 0, 0, 0, 0, 0 ,1,0,1,0},
+			{ 0, 0, 0, 0, 0 ,1,1,1,0}, 
+			{ 0, 0, 0, 0, 0 ,0,0,0,0}
 			};
 
 	static LinkedList<Position> path = new LinkedList<>();
 
 	public static void main(String[] args) {
 
-		Position p = new Position(0, 3);
+		Position p = new Position(0, 5);
 		path.push(p);
-		int x = path.peek().x;
-		int y = path.peek().y;
 
-		maze[y][x] = 0;
+
+		
 
 		while (true) {
+			int x = path.peek().x;
+			int y = path.peek().y;
 
+			maze[y][x] = 0;
 // down
 	  if(IsValid(y+1,x)) {
 	
@@ -32,10 +38,10 @@ public class Maze {
 			}
 				else
 					if(maze[y+1][x]==1) {
-					y=y+1;
+					
 				   System.out.println("Moved Down");
-					path.push(new Position(y,x));
-					maze[y][x]=0;
+					path.push(new Position(y+1,x));
+					
 					continue;
 					}
 		  
@@ -50,10 +56,10 @@ public class Maze {
 				}
 					else
 						if(maze[y][x-1]==1) {
-						x=x-1;
+					
 					   System.out.println("Moved Left");
-						path.push(new Position(y,x));
-						maze[y][x]=0;
+						path.push(new Position(y,x-1));
+						
 						continue;
 						}
 	      }
@@ -65,10 +71,10 @@ public class Maze {
 				}
 					else
 						if(maze[y-1][x]==1) {
-						y=y-1;
+						
 					   System.out.println("Moved Up");
-						path.push(new Position(y,x));
-						maze[y][x]=0;
+						path.push(new Position(y-1,x));
+						
 						continue;
 						}
 	      }
@@ -80,10 +86,10 @@ public class Maze {
 				}
 					else
 						if(maze[y][x+1]==1) {
-						x=x+1;
+						
 					   System.out.println("Moved right ");
-						path.push(new Position(y,x));
-						maze[y][x]=0;
+						path.push(new Position(y,x+1));
+						
 						continue;
 						}
 	      }
@@ -93,7 +99,7 @@ public class Maze {
 	      if(path.size()<=0)
 	    	  {
 	    	  System.out.println("No Path");
-	    	  maze[y][x]=0;
+	    	  
 	    	  return;
 	    	  }
 	    	  
